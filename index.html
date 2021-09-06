@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Daraz | HOME</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="text/css" href="daraz-logo.png">
+	<style type="text/css">
+		@media Only screen and (max-width: 768px){
+			#showcase h1{
+			margin-top: 25%;
+			text-align: center;
+			color: #02320B;
+			font-size: 55px;
+			border: 1px solid green;
+			}
+	</style>
+	<script>
+	function validateForm() {
+	  let x = document.forms["myForm"]["email"].value;
+	  if (x == "") {
+	    alert("Email must be filled out");
+	    return false;
+	  }
+	}
+	</script>
+	
+</head>
+<body>
+	<header id="header">
+		<div class="container">
+			<div class="brand">
+				<h1>
+					Daraz<span class="h1-color">.pk</span>
+				</h1>
+			</div>
+			<nav>
+				<ul class="nav">
+					<li  class="current"><a href="Only html and css.html">Home</li></a>
+					<li><a href="about.html">About</li></a>
+					<li><a href="services.html">Services</li></a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="showcase">
+		<div class="container">
+			<h1>
+				The Best Place To Buy Everything!
+			</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+	</section>
+	<section id="newsletter">
+		<div class="container">
+			<h3>
+				<i>daraz.pk</i>
+			</h3>
+			<form class="#form" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+				<input type="email" name="email" placeholder="Email">
+				<input type="submit" name="Subscribe" value="Subscribe">
+			</form>
+		</div>
+	</section>
+	<section id="boxes">
+		<div class="container">
+			<ul class="box">
+				<li><img src="htmlpic.png" width="50%"><p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser.</p></li>
+				<li><img src="htmlpic.png" width="50%"><p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p></li>
+				<li><img src="htmlpic.png" width="50%"><p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p></li>
+			</ul>
+		</div>
+	</section>
+	<footer id="footer">
+		<p>Copyrights &copy; Fareed 2021, All rights reserved.</p>
+	</footer>
+</body>
+</html>
